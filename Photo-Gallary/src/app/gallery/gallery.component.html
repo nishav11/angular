@@ -1,1 +1,14 @@
 <h3>Recent Photos</h3>
+
+<div class="row">
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy=='all'">All</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='galaxy'" (click)="filterBy=='galaxy'">Galaxy</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='mountain'" (click)="filterBy=='mountain'">Mountains</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='nature'" (click)="filterBy=='nature'">Nature</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='wallpaper'" (click)="filterBy=='wallpaper'">Wallpapers</button>
+    <ul id="thumbnailsList">
+        <li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
+            <img src="{{image.url}}" class="tn" width="200" height="160">
+        </li>
+    </ul>
+</div>

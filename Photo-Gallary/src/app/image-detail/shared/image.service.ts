@@ -7,7 +7,7 @@ export class ImageService {
     getImages() {
         return this.visibleImages = IMAGES.slice(0);
     }
-    getImage(id: number){
+    getImage(id: number) {
         return IMAGES.slice(0).find(image => image.id === id);
     }
 
@@ -24,11 +24,11 @@ const IMAGES = [
     {'id': 8, 'category': 'mountain', 'caption': 'Beautiful Mountains', 'url': 'assets/images/maxresdefault (1).jpg' },
     {'id': 9, 'category': 'mountain', 'caption': 'Beautiful Mountains', 'url': 'assets/images/mountain.jpg' },
     {'id': 10, 'category': 'mountain', 'caption': 'Beautiful Mountains', 'url': 'assets/images/matterhorn-918442_960_720.jpg' },
-    {'id': 11, 'category': 'sceneries', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/Beauty-nature.jpg' },
-    {'id': 12, 'category': 'sceneries', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/Best-beach-background.jpg' },
-    {'id': 13, 'category': 'sceneries', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/maxresdefault.jpg' },
-    {'id': 14, 'category': 'sceneries', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/forest-wallpaper.jpg' },
-    {'id': 15, 'category': 'sceneries', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/Beautiful-Beach-Nature-Wallpaper.jpg' },
+    {'id': 11, 'category': 'nature', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/Beauty-nature.jpg' },
+    {'id': 12, 'category': 'nature', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/Best-beach-background.jpg' },
+    {'id': 13, 'category': 'nature', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/maxresdefault.jpg' },
+    {'id': 14, 'category': 'nature', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/forest-wallpaper.jpg' },
+    {'id': 15, 'category': 'nature', 'caption': 'Beautiful Sceneries', 'url': 'assets/images/Beautiful-Beach-Nature-Wallpaper.jpg' },
     {'id': 16, 'category': 'wallpaper', 'caption': 'Beautiful Wallpapers', 'url': 'assets/images/fresh-wallpaper.jpg' },
     {'id': 17, 'category': 'wallpaper', 'caption': 'Beautiful Wallpapers', 'url': 'assets/images/lightning.jpg' },
     {'id': 18, 'category': 'wallpaper', 'caption': 'Beautiful Wallpapers', 'url': 'assets/images/Green-grass.jpg' },
