@@ -1,17 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
 
-@Injectable ()
-
-export class ImageService {
+@Injectable()
+export class ImageService{
     visibleImages = [];
-    getImages() {
+
+    getImages(){
         return this.visibleImages = IMAGES.slice(0);
     }
-    getImage(id: number) {
-        return IMAGES.slice(0).find(image => image.id === id);
-    }
 
+    getImage(id: number){
+        return IMAGES.slice(0).find(image => image.id === id) 
+    }
 }
+
 
 const IMAGES = [
     {'id': 1, 'category': 'galaxy', 'caption': 'Beautiful Galaxy', 'url': 'assets/images/space_light_luster_94206_1920x1080.jpg'},

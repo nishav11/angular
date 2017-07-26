@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { appRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ImageDetailComponent } from './image-detail/image-detail.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+   appRoutes
   ],
   providers: [ImageService, ImageFilterPipe],
   bootstrap: [AppComponent]
