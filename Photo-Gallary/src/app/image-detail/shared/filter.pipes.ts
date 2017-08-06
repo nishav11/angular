@@ -7,7 +7,7 @@ export class ImageFilterPipe implements PipeTransform {
 
       if(criteria === 'all'){ return items }
 else {
-return items.filter(item =>{return item.category === criteria;});
+return items.filter(item =>{return item.category === criteria });
 
         }
     }
