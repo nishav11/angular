@@ -25,7 +25,7 @@
         "bootstrap": "^3.3.7",
         "core-js": "^2.4.1",
         "express": "^4.15.3",
-        "mongoose": "^4.11.5",
+        "mongoose": "^4.11.6",
         "ngx-bootstrap": "^1.8.1",
         "rxjs": "^5.4.1",
         "zone.js": "^0.8.14"

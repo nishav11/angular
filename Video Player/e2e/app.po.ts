@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class MeanAppPage {
+export class VideoPlayerPage {
   navigateTo() {
     return browser.get('/');
   }

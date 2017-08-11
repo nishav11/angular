@@ -1,10 +1,10 @@
-import { MeanAppPage } from './app.po';
+import { VideoPlayerPage  } from './app.po';
 
 describe('mean-app App', () => {
-  let page: MeanAppPage;
+  let page: VideoPlayerPage;
 
   beforeEach(() => {
-    page = new MeanAppPage();
+    page = new VideoPlayerPage();
   });
 
   it('should display welcome message', () => {
