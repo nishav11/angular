@@ -10,10 +10,18 @@ import { Component, OnInit } from '@angular/core';
 export class VideoDetailComponent implements OnInit {
 
 
+private editTitle =  false;
 
   constructor() { }
 
   ngOnInit() {
   }
+   // tslint:disable-next-line:use-life-cycle-interface
+   ngOnChanges() {
+    this.editTitle = false;
+   }
 
+    onTitleClick() {
+      this.editTitle = true;
+    }
 }
