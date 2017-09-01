@@ -2,5 +2,6 @@
 
 html,
 body {
+    background-image: url("assets/images/bg.jpg");
     padding: 30px;
 }
