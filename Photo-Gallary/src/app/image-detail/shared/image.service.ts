@@ -1,15 +1,17 @@
-import { Injectable } from '@angular/core'
+import { Injectable } from '@angular/core';
 
 @Injectable()
-export class ImageService{
+export class ImageService {
     visibleImages = [];
 
     getImages(){
+        // tslint:disable-next-line:no-use-before-declare
         return this.visibleImages = IMAGES.slice(0);
     }
 
-    getImage(id: number){
-        return IMAGES.slice(0).find(image => image.id === id) 
+    getImage(id: number) {
+        // tslint:disable-next-line:no-use-before-declare
+        return IMAGES.slice(0).find(image => image.id === id);
     }
 }
 
