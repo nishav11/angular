@@ -15,6 +15,6 @@
 <i><h3>Todo List</h3></i>
 <ul class="list-group">
     <li *ngFor="let todo of todos" class="list-group-item">
-        <span (click)="editToDo(todo)"> {{todo.text}}</span> <button class="btn btn-primary btn-xs" (click)="deleteTodo(todo.text)">X</button>
+        <span (click)="editToDo(todo)"> {{todo.text}}</span> <button class="btn btn-primary btn-xs" (click)="deleteTodo(todo.text)">Remove</button>
     </li>
 </ul>
