@@ -13,6 +13,8 @@ export class MarketComponent implements OnInit {
 
    onAddToCollection(item: Collectable) {
     this.collectableService.addToCollection(item);
+    this.collectableService.removeFromCollectables(item);
+
   }
 
   ngOnInit() {

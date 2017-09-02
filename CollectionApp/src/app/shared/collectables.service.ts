@@ -21,6 +21,9 @@ export class CollectableService {
     }
     this.collection.push(item);
   }
+  removeFromCollectables(item: Collectable){
+    this.collectables.splice(this.collectables.indexOf(item), 1);
+  }
   removeFromCollection(item: Collectable) {
     this.collection.splice(this.collection.indexOf(item), 1); {
 
