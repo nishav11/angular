@@ -13,6 +13,7 @@ export class CollectionComponent implements OnInit {
 
   onRemoveFromCollection(item: Collectable) {
     this.collectableService.removeFromCollection(item);
+    this.collectableService.addToCollectables(item);
   }
   ngOnInit() {
     this.collectedItems = this.collectableService.getCollection();

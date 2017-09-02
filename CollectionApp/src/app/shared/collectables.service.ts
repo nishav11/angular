@@ -23,9 +23,16 @@ export class CollectableService {
     }
     this.collection.push(item);
   }
+  addToCollectables(item: Collectable) {
+    if (this.collectables.indexOf(item) !== -1){
+      return;
+    }
+    this.collectables.push(item);
+  }
   removeFromCollectables(item: Collectable){
     this.collectables.splice(this.collectables.indexOf(item), 1);
   }
+  
   removeFromCollection(item: Collectable) {
     this.collection.splice(this.collection.indexOf(item), 1); {
 
