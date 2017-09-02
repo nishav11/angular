@@ -2,10 +2,12 @@ import {Collectable} from './collectables.model';
 
 export class CollectableService {
   private collectables: Collectable [] = [
-    {description: 'A vrey rare copy of "jQuery for dummies"', type: 'book'},
+    {description: 'A vrey rare copy of "jQuery for dummies"', type: 'Book'},
     {description: 'The first Letter ever written', type: 'Piece of Paper'},
     {description: 'A photograph showing nothing', type: 'Photo'},
-    {description: 'A book with all sold Zunes', type: 'Garbage'}
+    {description: 'A book with all sold Zunes', type: 'Garbage'},
+    {description: 'A must read book and best seller', type: 'Book'},
+    {description: 'A photgraph of beautiful aurora borealis', type: 'Photo'}
   ];
 
   private collection: Collectable[] = [] ;
