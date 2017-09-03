@@ -1,4 +1,10 @@
 .btn.btn-primary {
     float: right;
-    border-radius: 7px;
+    border-radius: 0px 15px 0px 15px;
+    box-shadow: teal 0px 4px;
+    ;
+}
+
+h3 {
+    text-shadow: rgba(132, 130, 130, 0.85) 1px 3px;
 }
