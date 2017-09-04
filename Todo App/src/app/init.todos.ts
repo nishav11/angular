@@ -4,7 +4,7 @@ export class Init {
           console.log('No Todos Faund.. Creating...');
         var todos = [
             {
-                text: 'AngualrJS 2'
+                text: 'Angualr 2'
             },
             {
                 text: 'Servlets & JSP'
