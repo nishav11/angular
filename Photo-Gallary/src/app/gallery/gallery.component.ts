@@ -9,7 +9,7 @@ import { ImageService } from '../image-detail/shared/image.service';
 
 export class GalleryComponent implements OnChanges {
   images: any[];
-  filterBy?: string = 'all'
+  filterBy?: string = 'all';
   visibleImages: any[] = [];
 
   constructor(private imageService: ImageService) {
